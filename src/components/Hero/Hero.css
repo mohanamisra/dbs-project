@@ -41,6 +41,7 @@
 
 .hero-heading {
     font-size: 64px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .hero-text {
@@ -72,4 +73,9 @@
     color: #FAF9F6;
     border: 2px solid white;
     font-size: 23px;
+}
+
+.char {
+    transform: translateY(200px);
+    transition: transform 0.75s ease-in-out;
 }
