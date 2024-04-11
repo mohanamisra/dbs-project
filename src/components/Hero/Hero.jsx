@@ -12,7 +12,7 @@ function Hero() {
                     Because you simply cannot afford to miss out on the crypto hype.
                     <br/>
                     <br/>
-                    Welcome to investing, it's been waiting for you.
+                    Welcome to crytpo, it's been waiting for you.
                 </p>
                 <button className = 'explore-button'>
                     Get Started
