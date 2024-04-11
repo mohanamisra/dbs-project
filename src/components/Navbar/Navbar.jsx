@@ -4,7 +4,7 @@ function Navbar() {
     return (
         <div className = 'navbar-container'>
             <div className = 'left'>
-                <p className = 'home'>Home</p>
+                <p className = 'home'>CryptoNivesh</p>
             </div>
             <div className = 'right'>
                 <div className = 'about-us'>About</div>

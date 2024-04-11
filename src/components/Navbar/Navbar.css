@@ -7,10 +7,31 @@
 .navbar-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    padding: 24px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+
+    color: #FAF9F6;
+}
+
+.left {
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .right {
+    font-size: 24px;
     display: flex;
-    justify-content: space-between;
-    width: 50%;
+    width: 100%;
+    gap: 48px;
+
+    justify-content: flex-end;
+}
+
+.right div:hover {
+    
 }
