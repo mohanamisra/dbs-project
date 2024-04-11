@@ -21,6 +21,7 @@
     display: flex;
     font-size: 32px;
     font-weight: 700;
+    padding-bottom: 8px;
 }
 
 .right {
@@ -32,6 +33,19 @@
     justify-content: flex-end;
 }
 
-.right div:hover {
+.right div {
+    display: inline-block;
+    padding-bottom:8px;
+    background-image: linear-gradient(#FAF9F6, #FAF9F6);
+    background-position: 0 100%;
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    transition:
+            background-size 0.3s,
+            background-position 0s 0.3s; /*change after the size immediately*/
+}
 
+.right div:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
 }
