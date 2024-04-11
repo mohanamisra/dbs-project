@@ -58,8 +58,18 @@
     border: none;
     border-radius: 3px;
     outline: none;
-    box-shadow: none;
 
     background-color: #FAF9F6;
-    max-width: 25%;
+    max-width: 180px;
+
+    box-shadow: inset 0 0 0 0 #040329;
+    transition: ease-out 0.4s;
+}
+
+.explore-button:hover {
+    box-shadow: inset 180px 0 0 0 #040329;
+    cursor: pointer;
+    color: #FAF9F6;
+    border: 2px solid white;
+    font-size: 23px;
 }
