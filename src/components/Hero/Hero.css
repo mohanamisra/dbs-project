@@ -8,4 +8,44 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    color: #FAF9F6;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.hero-image-div img {
+    width: 600px;
+    margin-right: -48px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.hero-heading {
+    font-size: 64px;
+}
+
+.hero-text {
+    font-size: 24px;
+    text-align: justify;
+
+    color: #c4c2be;
+    max-width: 90%;
+}
+
+.explore-button {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: none;
+
+    background-color: #FAF9F6;
+    max-width: 25%;
 }

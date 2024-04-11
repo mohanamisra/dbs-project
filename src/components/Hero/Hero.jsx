@@ -6,13 +6,13 @@ function Hero() {
         <div className = 'hero-container'>
             <div className = 'hero-content'>
                 <h1 className = 'hero-heading'>
-                    Hello World
+                    Welcome
                 </h1>
                 <p className = 'hero-text'>
                     Lorem Ipsum Something Something I cannot bother to use the generator. Enjoy.
                 </p>
-                <button>
-                    Explore
+                <button className = 'explore-button'>
+                    Get Started
                 </button>
             </div>
             <div className = 'hero-image-div'>
