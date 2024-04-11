@@ -29,8 +29,8 @@
 
 .hero-image-div img {
     width: 700px;
-    margin-right: -64px;
-    transform: rotate(5deg);
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 .hero-content {
