@@ -6,10 +6,13 @@ function Hero() {
         <div className = 'hero-container'>
             <div className = 'hero-content'>
                 <h1 className = 'hero-heading'>
-                    Welcome
+                    Track Today, Propser Tomorrow
                 </h1>
                 <p className = 'hero-text'>
-                    Lorem Ipsum Something Something I cannot bother to use the generator. Enjoy.
+                    Because you simply cannot afford to miss out on the crypto hype.
+                    <br/>
+                    <br/>
+                    Welcome to investing, it's been waiting for you.
                 </p>
                 <button className = 'explore-button'>
                     Get Started
