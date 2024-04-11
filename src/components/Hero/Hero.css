@@ -28,8 +28,9 @@
 }
 
 .hero-image-div img {
-    width: 600px;
-    margin-right: -48px;
+    width: 700px;
+    margin-right: -64px;
+    transform: rotate(5deg);
 }
 
 .hero-content {
