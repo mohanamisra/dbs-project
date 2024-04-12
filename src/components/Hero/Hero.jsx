@@ -1,33 +1,36 @@
 import './Hero.css'
 import heroImage from '../../assets/heroImage.png'
 import SplitType from 'split-type'
-import gsap from "gsap";
+import {gsap} from "gsap";
 import React, { useEffect } from 'react';
-import { useGSAP } from "@gsap/react";
 
 function Hero() {
+
     useEffect(() => {
-        const heroText1 = new SplitType('#hero-heading1');
-        gsap.to('.char', {
-            y: 0,
-            stagger: 0.05,
-            delay: 0.2,
-            duration: 0.1
-        });
-        const heroText2 = new SplitType('#hero-heading2');
-        gsap.to('.char', {
-            y: 0,
-            stagger: 0.05,
-            delay: 0.2,
-            duration: 0.1
-        });
-    }, []); // Empty dependency array ensures this effect runs only once after mount
+        const heroText = new SplitType('.hero-heading', {types: 'lines'})
+        const lines = heroText.lines;
+
+        gsap.fromTo(
+            lines,
+            {
+                x: -200,
+                opacity: 0
+            },
+            {
+                x: 0,
+                opacity: 1,
+                stagger: 0.05,
+                duration: 2,
+                ease: 'power4.out',
+            }
+        )
+    }, [])
+
     return (
         <div className = 'hero-container'>
             <div className = 'hero-content'>
                 <h1 className = 'hero-heading'>
-                    <span id = 'hero-heading1'>Track Today, </span>
-                    <span id = 'hero-heading2'>Prosper Tomorrow</span>
+                    Track Today,<br/> Propser Tomorrow
                 </h1>
                 <p className = 'hero-text'>
                     Because you simply cannot afford to miss out on the crypto hype.
