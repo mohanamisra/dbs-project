@@ -1,9 +1,16 @@
 import './Navbar.css'
+import {useNavigate} from "react-router-dom";
 
 function Navbar() {
+    const navigate = useNavigate();
+
+    const handleHomeClick = () => {
+        navigate('/home');
+    }
+
     return (
         <div className = 'navbar-container'>
-            <div className = 'left'>
+            <div className = 'left' onClick={handleHomeClick}>
                 <p className = 'home'>CryptoNivesh</p>
             </div>
             <div className = 'right'>
