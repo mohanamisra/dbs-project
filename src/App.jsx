@@ -1,14 +1,16 @@
-import './App.css'
-import Navbar from "./components/Navbar/Navbar.jsx";
-import Hero from "./components/Hero/Hero.jsx";
-import Footer from "./components/Footer/Footer.jsx";
-
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./components/Home/Home.jsx";
+import Trackpage from "./components/Trackpage/Trackpage.jsx";
 function App() {
   return (
       <>
-          <Navbar/>
-          <Hero/>
-          <Footer/>
+          <BrowserRouter>
+              <Routes>
+                  <Route index element = {<Home/>}/>
+                  <Route path = '/home' element = {<Home/>}/>
+                  <Route path = '/track' element = {<Trackpage/>}/>
+              </Routes>
+          </BrowserRouter>
       </>
   )
 }

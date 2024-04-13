@@ -3,8 +3,10 @@ import heroImage from '../../assets/heroImage.png'
 import SplitType from 'split-type'
 import {gsap} from "gsap";
 import React, { useEffect } from 'react';
+import {useNavigate} from "react-router-dom";
 
 function Hero() {
+    const navigate = useNavigate();
 
     useEffect(() => {
         const heroText = new SplitType('.hero-heading', {types: 'lines'})
@@ -38,7 +40,7 @@ function Hero() {
                     <br/>
                     Welcome to crytpo, it's been waiting for you.
                 </p>
-                <button className = 'explore-button'>
+                <button className = 'explore-button' onClick={() => {navigate('/track');}}>
                     Get Started
                 </button>
             </div>
