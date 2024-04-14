@@ -30,7 +30,7 @@ import password_icon from './Assets/password.png'
     axios.post('http://localhost:3001/register',{name, email, password})
     .then (result=> console.log(result))
     .catch(err=> console.log(err))
-    navigate('/login')
+    navigate('/track')
    
     }
     
@@ -86,9 +86,10 @@ import password_icon from './Assets/password.png'
 
       <div className="registration"> Already have an account? <Link to="/login"> Click Here to login  </Link>
       </div>
+  </div>
 
 
-    </div>
+   
 
 
   )

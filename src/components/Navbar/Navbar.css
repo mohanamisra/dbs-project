@@ -46,6 +46,13 @@
             background-position 0s 0.3s; /*change after the size immediately*/
 }
 
+
+
+a{
+    color:#fff;
+}
+ 
+
 .right div:hover {
     background-position: 100% 100%; /*OR bottom right*/
     background-size: 100% 2px;

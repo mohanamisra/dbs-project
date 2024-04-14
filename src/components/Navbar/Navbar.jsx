@@ -1,5 +1,6 @@
 import './Navbar.css'
 import {useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function Navbar() {
     const navigate = useNavigate();
@@ -16,7 +17,10 @@ function Navbar() {
             <div className = 'right'>
                 <div className = 'about-us'>About</div>
                 <div className = 'services'>Services</div>
-                <div className = 'sign-up'>Sign Up/Log In</div>
+                <div className = 'sign-up'>
+                    <Link to="/register" className="link">
+                    Sign Up/Log In
+                        </Link></div>
             </div>
         </div>
     )

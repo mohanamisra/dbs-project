@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState}  from 'react'
 import email_icon from './Assets/email.png'
 import password_icon from './Assets/password.png'
 import {useNavigate} from"react-router-dom"
@@ -8,25 +8,28 @@ import axios from "axios";
 
 const Login = () => {
 
+  const navigate= useNavigate()
 
     const[email, setEmail]= useState()
     const[password, setPassword]= useState()
-    const navigate= useNavigate()
+
+  
+
     const submitHandler= async(e) =>
     {
-  
-     
+    
       axios.post('http://localhost:3001/login',{ email, password})
       .then(result=>
     {
         console.log(result)
-        if (result.data==="Successfully logged in")
-         navigate('/home')
-
+        if (result.data ==" Successfully logged in");
+          navigate("/track")
+        
     })
     .catch(err=> console.log(err))
-      
+
     }
+
   return (
     <div className="container">
       <div className="header">
@@ -42,8 +45,8 @@ const Login = () => {
         <div className="input">
           <img src={email_icon} alt="" />
           <input type="email"
-         value={email} 
-          placeholder='Email Id'
+           value={email} 
+          placeholder='email'
           onChange={(e)=> setEmail(e.target.value)}
           />
 
@@ -69,11 +72,15 @@ const Login = () => {
 
       </div>
 
+      
+      
+
       <div className="registration"> New User? <Link to="/register"> Click Here to create account  </Link>
+      </div>
       </div>
 
 
-    </div>
+
   )
 }
 
